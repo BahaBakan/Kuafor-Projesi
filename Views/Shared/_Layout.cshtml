@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand ps-3">HangiKuaför</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Sol Taraf: Menü -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Home/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Calisanlarimiz/Calisanlarimiz">Çalışanlarımız</a>
+                    </li> 
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Randevu Al</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Saç Modelini Bul</a>
+                    </li>
+                </ul>
+                <!-- Sağ Taraf: Giriş Yap ve Kayıt Ol -->
+                <ul class="navbar-nav ms-auto pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Account/Login">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Account/Register">Kayıt Ol</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+     @RenderBody()
+
+       <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">İletişim</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Adres</h5>
+                    <p>Kuaför Sokak No: 1, İstanbul</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>İletişim</h5>
+                    <p>Telefon: +90 555 555 55 55</p>
+                    <p>Email: info@hangikuafor.com</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+</body>
+</html>

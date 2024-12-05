@@ -74,3 +74,4 @@ C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\compressed\by3bump8vj-notf
 C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\compressed\hiynnq5bkt-h1s4sie4z3.gz
 C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\compressed\2a5r6edp6v-63fj8s7r0e.gz
 C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\compressed\3a8fgebnqo-0j3bgjxly4.gz
+C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\KuaforProjesi.sourcelink.json

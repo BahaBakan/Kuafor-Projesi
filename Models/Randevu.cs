@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace efcoreApp.Data
+namespace efcoreApp.Models
 {
     public class Randevu
     {

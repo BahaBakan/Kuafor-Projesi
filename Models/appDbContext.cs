@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace efcoreApp.Data
+namespace efcoreApp.Models
 {
     public class AppDbContext : DbContext
     { 

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 
-namespace efcoreApp.Data
+namespace efcoreApp.Models
 {
     public class Calisan
     {

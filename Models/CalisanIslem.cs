@@ -1,4 +1,4 @@
-namespace efcoreApp.Data
+namespace efcoreApp.Models
 {
     public class CalisanIslem
     {

@@ -3,6 +3,7 @@ using System;
 using KuaforProjesi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforProjesi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20241217184056_UpdateCalisanlarTable")]
+    partial class UpdateCalisanlarTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -88,21 +91,19 @@ namespace KuaforProjesi.Migrations
                     b.Property<int>("CalisanId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("IslemId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Islem")
+                        .HasColumnType("TEXT");
 
-                    b.Property<string>("Saat")
-                        .IsRequired()
+                    b.Property<string>("KullaniciId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<TimeSpan>("Saat")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Tarih")
                         .HasColumnType("TEXT");
 
                     b.HasKey("RandevuId");
-
-                    b.HasIndex("CalisanId");
-
-                    b.HasIndex("IslemId");
 
                     b.ToTable("Randevular");
                 });
@@ -145,25 +146,6 @@ namespace KuaforProjesi.Migrations
                         .IsRequired();
 
                     b.Navigation("Calisanlarimiz");
-                });
-
-            modelBuilder.Entity("KuaforProjesi.Data.Randevu", b =>
-                {
-                    b.HasOne("KuaforProjesi.Data.Calisanlarimiz", "Calisan")
-                        .WithMany()
-                        .HasForeignKey("CalisanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("KuaforProjesi.Data.Islem", "Islem")
-                        .WithMany()
-                        .HasForeignKey("IslemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Calisan");
-
-                    b.Navigation("Islem");
                 });
 
             modelBuilder.Entity("KuaforProjesi.Data.Calisanlarimiz", b =>

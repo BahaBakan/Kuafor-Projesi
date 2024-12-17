@@ -1,4 +1,4 @@
-@model KuaforProjesi.Data.Randevu
+@model KuaforProjesi.ViewModels.RandevuViewModel
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,45 +12,71 @@
 
     <div class="container">
         <h2 class="text-center mb-4">Randevu Al</h2>
-        <form asp-controller="Randevu" asp-action="RandevuAl" method="post">
+        <form asp-action="Randevu" method="post">
+            <!-- İşlem Seçimi -->
             <div class="mb-3">
-                <label asp-for="Islem" class="form-label">İşlem Seç</label>
-                <select asp-for="Islem" class="form-select" required>
+                <label asp-for="IslemId" class="form-label">İşlem Seç</label>
+                <select asp-for="IslemId" class="form-select" required>
                     <option value="">İşlem Seçin</option>
-                   @*@foreach (var islem in ViewBag.IslemListesi)
+                    @if (Model.Islemler != null && Model.Islemler.Any())
                     {
-                        <option value="@islem">@islem</option>
-                    } *@
+                        @foreach (var islem in Model.Islemler)
+                        {
+                            <option value="@islem.IslemId">@islem.IslemAdi</option>
+                        }
+                    }
+                    else
+                    {
+                        <option value="">İşlem bulunamadı</option>
+                    }
                 </select>
             </div>
 
+            <!-- Çalışan Seçimi -->
             <div class="mb-3">
                 <label asp-for="CalisanId" class="form-label">Çalışan Seç</label>
                 <select asp-for="CalisanId" class="form-select" required>
                     <option value="">Çalışan Seçin</option>
-                  @*  @foreach (var calisan in Model.Calisanlar)
+                    @if (Model.Calisanlar != null && Model.Calisanlar.Any())
                     {
-                        <option value="@calisan.CalisanId">@calisan.Ad @calisan.Soyad</option>
-                    }*@
+                        @foreach (var calisan in Model.Calisanlar)
+                        {
+                            <option value="@calisan.CalisanId">@calisan.Ad @calisan.Soyad</option>
+                        }
+                    }
+                    else
+                    {
+                        <option value="">Çalışan bulunamadı</option>
+                    }
                 </select>
             </div>
 
+            <!-- Randevu Tarihi -->
             <div class="mb-3">
                 <label asp-for="Tarih" class="form-label">Randevu Tarihi</label>
                 <input asp-for="Tarih" class="form-control" type="date" required />
             </div>
 
+            <!-- Saat Seçimi -->
             <div class="mb-3">
                 <label asp-for="Saat" class="form-label">Saat Seç</label>
                 <select asp-for="Saat" class="form-select" required>
                     <option value="">Saat Seçin</option>
-                   @*@foreach (var calisanSaat in Model.CalisanSaatleri)
+                    @if (Model.CalisanSaatleri != null && Model.CalisanSaatleri.Any())
                     {
-                        <option value="@calisanSaat.Saat">@calisanSaat.Saat</option>
-                    }*@
+                        @foreach (var calisanSaat in Model.CalisanSaatleri)
+                        {
+                            <option value="@calisanSaat.Saat">@calisanSaat.Saat</option>
+                        }
+                    }
+                    else
+                    {
+                        <option value="">Saat bulunamadı</option>
+                    }
                 </select>
             </div>
 
+            <!-- Submit Butonu -->
             <button type="submit" class="btn btn-primary w-100">Randevu Al</button>
         </form>
     </div>

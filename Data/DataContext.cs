@@ -9,9 +9,10 @@ namespace KuaforProjesi.Data
             
         }
         public DbSet<Register> Registers =>Set<Register>();
-          public DbSet<Calisanlarimiz> Calisanlar =>Set<Calisanlarimiz>();
         public DbSet<Randevu> Randevular =>Set<Randevu>();
         public DbSet<Islem> Islemler =>Set<Islem>();
+       public DbSet<Calisanlarimiz> Calisanlarimiz =>Set<Calisanlarimiz>(); 
+        public DbSet<CalisanSaat> CalisanSaatler =>Set<CalisanSaat>();
     }
 
 

@@ -1,21 +1,31 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace KuaforProjesi.Data
 {
     public class Randevu
     {
-         [Key]
+        [Key]
         public int RandevuId { get; set; }
 
-        // Çalışan ile ilişkilendirme
-        public int CalisanId { get; set; }
-        public Calisanlarimiz Calisan { get; set; } // İlgili çalışanın bilgileri
 
-        // İşlem ile ilişkilendirme
-        public int IslemId { get; set; }
-        public Islem Islem { get; set; } // İlgili işlem bilgileri
+        [ForeignKey("IslemId")]
+        public Islem? Islem { get; set; }
 
-        // Randevu tarihi ve saati
-        public DateTime Tarih { get; set; }
-       public String Saat { get; set; }  // Saat bilgisi
+        // Müşteri bilgisi
+        [Required]
+        public string? MusteriAdi { get; set;}
+
+        // Randevu tarihi
+        [Required]
+        public DateTime Tarih { get; set;}
+
+        // Randevu saati
+        [Required]
+        public int Saat { get; set;} // TimeSpan kullanımı, saat formatını düzenler 
+        
+        public string? calisanAdi {get; set;} 
+
+        public string? IslemAdi {get; set;}
     }
 }

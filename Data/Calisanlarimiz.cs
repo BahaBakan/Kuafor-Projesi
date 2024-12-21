@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+
 namespace KuaforProjesi.Data
 {
     public class Calisanlarimiz
@@ -6,12 +7,21 @@ namespace KuaforProjesi.Data
         [Key]
         public int CalisanId { get; set; }
         
+        [Required]
         public string? Ad { get; set; }
-        public string? Soyad { get; set; }
-        public string? UzmanlikAlani { get; set; } // Örneğin, "Kuaför", "Saç Stilisti" gibi
 
-        // Çalışanın mevcut saat dilimlerini gösterebilmek için bir liste
-        public List<CalisanSaat>? CalisanSaatleri { get; set; } 
-          public List<Islem>? Islemler { get; set; }
+        [Required]
+        public string? Soyad { get; set; }
+
+        public string? UzmanlikAlani { get; set; } // Çalışanın uzmanlık alanı
+
+        // Çalışma saat aralığı
+
+        public string? calismaSaati {get; set;}
+
+        // Çalışanın yapabildiği işlemler
+        public List<Islem>? Islemler { get; set; }  
+
+        public List<Randevu>? randevular {get; set;}
     }
 }

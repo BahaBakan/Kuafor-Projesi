@@ -7,14 +7,13 @@ namespace KuaforProjesi.Data
     {
         [Key]
         public int IslemId { get; set; }
-        
-        [Required]
-        public string? IslemAdi { get; set; }
 
-        // Çalışan ile ilişkilendiriyoruz
-        public int CalisanId { get; set; }
+        [Required]
+        public string? IslemAdi { get; set; } // Örn: Saç Kesimi, Boyama
         
-        [ForeignKey("CalisanId")]
-        public Calisanlarimiz? Calisanlarimiz { get; set; }  // Çalışan tablosuyla ilişki
+        public int fiyati {get; set;}
+
+        // Çalışan ile ilişki
+         public List<Calisanlarimiz>? calisanlar {get; set;}
     }
 }

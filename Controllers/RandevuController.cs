@@ -1,4 +1,4 @@
-using KuaforProjesi.Data;
+using KuaforProjesi.Data; 
 using KuaforProjesi.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,14 +20,13 @@ namespace KuaforProjesi.Controllers
             var viewModel = new RandevuViewModel
             {
                 Calisanlar = await _context.Calisanlarimiz.ToListAsync(),
-                CalisanSaatleri = await _context.CalisanSaatler.ToListAsync(),
                 Islemler = await _context.Islemler.ToListAsync()
             };
-            
-             if (viewModel.Islemler == null || !viewModel.Islemler.Any())
-              {
-                     // Islemler tablosunda veri yoksa, bir hata mesajı veya boş liste dönebilirsiniz
-                     ModelState.AddModelError("", "İşlem verisi bulunamadı.");
+
+            if (viewModel.Islemler == null || !viewModel.Islemler.Any())
+            {
+                // Islemler tablosunda veri yoksa, bir hata mesajı veya boş liste dönebilirsiniz
+                ModelState.AddModelError("", "İşlem verisi bulunamadı.");
             }
             return View(viewModel); // View'a viewModel gönder
         }
@@ -41,8 +40,8 @@ namespace KuaforProjesi.Controllers
                 // Modelden yeni randevu nesnesi oluştur
                 var randevu = new Randevu
                 {
-                    CalisanId = viewModel.CalisanId,  // Modelden gelen çalışan ID
-                    IslemId = viewModel.IslemId,      // Modelden gelen işlem ID
+                    calisanAdi = viewModel.calisanAdi,  // Modelden gelen çalışan ID
+                    IslemAdi = viewModel.IslemAdi,      // Modelden gelen işlem ID
                     Tarih = viewModel.Tarih,          // Modelden gelen tarih
                     Saat = viewModel.Saat             // Modelden gelen saat
                 };
@@ -58,5 +57,18 @@ namespace KuaforProjesi.Controllers
             // Eğer model geçerli değilse, formu tekrar göster
             return View(viewModel);  // Geçerli değilse aynı sayfayı yeniden yükle
         }
+
+        [HttpGet]
+        public async Task<JsonResult> GetCalisanlarByIslem(int islemId)
+        {
+            var calisanlar = await _context.Calisanlarimiz
+                .Where(c => c.Islemler.Any(i => i.IslemId == islemId))
+                .Select(c => new { c.CalisanId, c.Ad, c.Soyad })
+                .ToListAsync();
+            return Json(calisanlar);
+        }
+
+     
+
     }
 }

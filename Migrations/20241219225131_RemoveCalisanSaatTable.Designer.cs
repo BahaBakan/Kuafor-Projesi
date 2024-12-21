@@ -3,6 +3,7 @@ using System;
 using KuaforProjesi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,27 +11,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforProjesi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20241219225131_RemoveCalisanSaatTable")]
+    partial class RemoveCalisanSaatTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
-
-            modelBuilder.Entity("CalisanlarimizIslem", b =>
-                {
-                    b.Property<int>("IslemlerIslemId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("calisanlarCalisanId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("IslemlerIslemId", "calisanlarCalisanId");
-
-                    b.HasIndex("calisanlarCalisanId");
-
-                    b.ToTable("CalisanlarimizIslem");
-                });
 
             modelBuilder.Entity("KuaforProjesi.Data.Calisanlarimiz", b =>
                 {
@@ -42,14 +30,17 @@ namespace KuaforProjesi.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("CalismaBaslangicSaati")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CalismaBitisSaati")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Soyad")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UzmanlikAlani")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("calismaSaati")
                         .HasColumnType("TEXT");
 
                     b.HasKey("CalisanId");
@@ -63,14 +54,19 @@ namespace KuaforProjesi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("CalisanId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("IslemAdi")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("fiyati")
+                    b.Property<int>("IslemSuresi")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("IslemId");
+
+                    b.HasIndex("CalisanId");
 
                     b.ToTable("Islemler");
                 });
@@ -81,31 +77,25 @@ namespace KuaforProjesi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("CalisanlarimizCalisanId")
+                    b.Property<int>("CalisanId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("IslemAdi")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("IslemId")
+                    b.Property<int>("IslemId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("MusteriAdi")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Saat")
-                        .HasColumnType("INTEGER");
+                    b.Property<TimeSpan>("Saat")
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Tarih")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("calisanAdi")
-                        .HasColumnType("TEXT");
-
                     b.HasKey("RandevuId");
 
-                    b.HasIndex("CalisanlarimizCalisanId");
+                    b.HasIndex("CalisanId");
 
                     b.HasIndex("IslemId");
 
@@ -132,37 +122,39 @@ namespace KuaforProjesi.Migrations
                     b.ToTable("Registers");
                 });
 
-            modelBuilder.Entity("CalisanlarimizIslem", b =>
+            modelBuilder.Entity("KuaforProjesi.Data.Islem", b =>
                 {
-                    b.HasOne("KuaforProjesi.Data.Islem", null)
-                        .WithMany()
-                        .HasForeignKey("IslemlerIslemId")
+                    b.HasOne("KuaforProjesi.Data.Calisanlarimiz", "Calisan")
+                        .WithMany("Islemler")
+                        .HasForeignKey("CalisanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KuaforProjesi.Data.Calisanlarimiz", null)
-                        .WithMany()
-                        .HasForeignKey("calisanlarCalisanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Calisan");
                 });
 
             modelBuilder.Entity("KuaforProjesi.Data.Randevu", b =>
                 {
-                    b.HasOne("KuaforProjesi.Data.Calisanlarimiz", null)
-                        .WithMany("randevular")
-                        .HasForeignKey("CalisanlarimizCalisanId");
+                    b.HasOne("KuaforProjesi.Data.Calisanlarimiz", "Calisan")
+                        .WithMany()
+                        .HasForeignKey("CalisanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("KuaforProjesi.Data.Islem", "Islem")
                         .WithMany()
-                        .HasForeignKey("IslemId");
+                        .HasForeignKey("IslemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Calisan");
 
                     b.Navigation("Islem");
                 });
 
             modelBuilder.Entity("KuaforProjesi.Data.Calisanlarimiz", b =>
                 {
-                    b.Navigation("randevular");
+                    b.Navigation("Islemler");
                 });
 #pragma warning restore 612, 618
         }

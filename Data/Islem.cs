@@ -14,6 +14,6 @@ namespace KuaforProjesi.Data
         public int fiyati {get; set;}
 
         // Çalışan ile ilişki
-         public List<Calisanlarimiz>? calisanlar {get; set;}
+          public List<IslemCalisan>? IslemCalisanlar { get; set; }
     }
 }

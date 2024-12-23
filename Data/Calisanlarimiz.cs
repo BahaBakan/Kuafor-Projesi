@@ -19,9 +19,9 @@ namespace KuaforProjesi.Data
 
         public string? calismaSaati {get; set;}
 
-        // Çalışanın yapabildiği işlemler
-        public List<Islem>? Islemler { get; set; }  
+        // Çalışanın yapabildiği işlemler 
 
-        public List<Randevu>? randevular {get; set;}
+        public List<Randevu>? randevular {get; set;} 
+           public List<IslemCalisan>? IslemCalisanlar { get; set; }
     }
 }

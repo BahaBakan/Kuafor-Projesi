@@ -3,6 +3,7 @@ using System;
 using KuaforProjesi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,12 +11,29 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforProjesi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20241223031546_RandevuSınıfıdüzenlendi")]
+    partial class RandevuSınıfıdüzenlendi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
+
+            modelBuilder.Entity("CalisanlarimizIslem", b =>
+                {
+                    b.Property<int>("IslemlerIslemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("calisanlarCalisanId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("IslemlerIslemId", "calisanlarCalisanId");
+
+                    b.HasIndex("calisanlarCalisanId");
+
+                    b.ToTable("CalisanlarimizIslem");
+                });
 
             modelBuilder.Entity("KuaforProjesi.Data.Calisanlarimiz", b =>
                 {
@@ -58,27 +76,6 @@ namespace KuaforProjesi.Migrations
                     b.HasKey("IslemId");
 
                     b.ToTable("Islemler");
-                });
-
-            modelBuilder.Entity("KuaforProjesi.Data.IslemCalisan", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("CalisanId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("IslemId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CalisanId");
-
-                    b.HasIndex("IslemId");
-
-                    b.ToTable("IslemCalisanlar");
                 });
 
             modelBuilder.Entity("KuaforProjesi.Data.Randevu", b =>
@@ -138,23 +135,19 @@ namespace KuaforProjesi.Migrations
                     b.ToTable("Registers");
                 });
 
-            modelBuilder.Entity("KuaforProjesi.Data.IslemCalisan", b =>
+            modelBuilder.Entity("CalisanlarimizIslem", b =>
                 {
-                    b.HasOne("KuaforProjesi.Data.Calisanlarimiz", "Calisan")
-                        .WithMany("IslemCalisanlar")
-                        .HasForeignKey("CalisanId")
+                    b.HasOne("KuaforProjesi.Data.Islem", null)
+                        .WithMany()
+                        .HasForeignKey("IslemlerIslemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KuaforProjesi.Data.Islem", "Islem")
-                        .WithMany("IslemCalisanlar")
-                        .HasForeignKey("IslemId")
+                    b.HasOne("KuaforProjesi.Data.Calisanlarimiz", null)
+                        .WithMany()
+                        .HasForeignKey("calisanlarCalisanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Calisan");
-
-                    b.Navigation("Islem");
                 });
 
             modelBuilder.Entity("KuaforProjesi.Data.Randevu", b =>
@@ -174,14 +167,7 @@ namespace KuaforProjesi.Migrations
 
             modelBuilder.Entity("KuaforProjesi.Data.Calisanlarimiz", b =>
                 {
-                    b.Navigation("IslemCalisanlar");
-
                     b.Navigation("randevular");
-                });
-
-            modelBuilder.Entity("KuaforProjesi.Data.Islem", b =>
-                {
-                    b.Navigation("IslemCalisanlar");
                 });
 #pragma warning restore 612, 618
         }

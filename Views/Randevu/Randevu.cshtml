@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randevu Al</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="bg-light">
@@ -15,47 +16,38 @@
     <div class="container">
         <h2 class="text-center mb-4">Randevu Al</h2>
         <form asp-action="Randevu" method="post">
+            <!-- Müşteri Adı -->
+            <div class="mb-3">
+                <label asp-for="MusteriAdi" class="form-label">Müşteri Adı</label>
+                <input asp-for="MusteriAdi" class="form-control" id="MusteriAdi" required />
+            </div>
+
             <!-- İşlem Seçimi -->
             <div class="mb-3">
                 <label asp-for="IslemId" class="form-label">İşlem Seç</label>
-                <select asp-for="IslemId" class="form-select" required>
+                <select asp-for="IslemId" class="form-select" id="IslemId" required>
                     <option value="">İşlem Seçin</option>
-
                     @foreach (var islem in Model.Islemler)
                     {
                         <option value="@islem.IslemId">@islem.IslemAdi</option>
                     }
-
                 </select>
             </div>
 
             <!-- Çalışan Seçimi -->
             <div class="mb-3">
                 <label asp-for="CalisanId" class="form-label">Çalışan Seç</label>
-                <select asp-for="CalisanId" class="form-select" required>
+                <select asp-for="CalisanId" class="form-select" id="CalisanId" required>
                     <option value="">Çalışan Seçin</option>
-
-                    @foreach (var calisan in Model.Calisanlar)
-                    {
-                        <option value="@calisan.CalisanId">@calisan.Ad @calisan.Soyad</option>
-                    }
-
                 </select>
-            </div>
-
-            <!-- Randevu Tarihi -->
-            <div class="mb-3">
-                <label asp-for="Tarih" class="form-label">Randevu Tarihi</label>
-                <input asp-for="Tarih" class="form-control" type="date" required />
             </div>
 
             <!-- Saat Seçimi -->
             <div class="mb-3">
                 <label asp-for="Saat" class="form-label">Saat Seç</label>
-                <select asp-for="Saat" class="form-select" required>
-                    <option value="">Saat Seçin</option>
-
-                </select>
+                <div id="Saat" class="btn-group" role="group" aria-label="Saat Seçimi">
+                    <!-- Saatler burada dinamik olarak butonlar olarak gösterilecek -->
+                </div>
             </div>
 
             <!-- Submit Butonu -->
@@ -63,35 +55,44 @@
         </form>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             $("#IslemId").change(function () {
                 var islemId = $(this).val();
                 $("#CalisanId").empty().append('<option value="">Çalışan Seçin</option>');
-                $("#Saat").empty().append('<option value="">Saat Seçin</option>');
+                $("#Saat").empty();
 
                 if (islemId) {
                     $.getJSON('/Randevu/GetCalisanlarByIslem', { islemId: islemId }, function (data) {
                         $.each(data, function (i, calisan) {
-                            $("#CalisanId").append(<option value="${calisan.calisanId}">${calisan.ad} ${calisan.soyad}</option>);
+                            $("#CalisanId").append(`<option value="${calisan.calisanId}">${calisan.ad} ${calisan.soyad}</option>`);
                         });
                     });
                 }
             });
-/*
+
             $("#CalisanId").change(function () {
                 var calisanId = $(this).val();
-                $("#Saat").empty().append('<option value="">Saat Seçin</option>');
+                var tarih = new Date().toISOString().split('T')[0]; // Bugün tarihi
+
+                $("#Saat").empty();
 
                 if (calisanId) {
-                    $.getJSON('/Randevu/GetCalisanSaatleri', { calisanId: calisanId }, function (data) {
+                    $.getJSON('/Randevu/GetCalisanSaatleri', { calisanId: calisanId, tarih: tarih }, function (data) {
                         $.each(data, function (i, saat) {
-                            $("#Saat").append(<option value="${saat.saat}">${saat.saat}</option>);
+                            var renk = saat.Durum === "Dolu" ? "btn-danger" : "btn-success";
+                            $("#Saat").append(`<button type="button" class="btn ${renk}" value="${saat.Saat}">${saat.Saat} (${saat.Durum})</button>`);
                         });
                     });
                 }
-            });*/
+            });
+
+            // Saat seçimine tıklama işlemi
+            $("#Saat").on("click", "button", function () {
+                $("#Saat").children().removeClass("active");
+                $(this).addClass("active");
+                $("input[name='Saat']").val($(this).val());
+            });
         });
     </script>
 </body>

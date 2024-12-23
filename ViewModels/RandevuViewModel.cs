@@ -10,12 +10,14 @@ namespace KuaforProjesi.ViewModels
         public IEnumerable<Islem>? Islemler { get; set; }
   
         public string? calisanAdi { get; set; }
-        public string? IslemAdi { get; set; }
+        public string? IslemAdi { get; set; } 
         public DateTime Tarih { get; set; }
         public int Saat { get; set; } 
-        public int? IslemId { get; set; } 
+        public int IslemId { get; set; } 
 
         public int? CalisanId { get; set; }
+
+         public string? MusteriAdi { get; set; }
   
    }
 }

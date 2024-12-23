@@ -12,7 +12,8 @@ namespace KuaforProjesi.Data
     
         public DbSet<Randevu> Randevular =>Set<Randevu>();
         public DbSet<Islem> Islemler =>Set<Islem>();
-       public DbSet<Calisanlarimiz> Calisanlarimiz =>Set<Calisanlarimiz>(); 
+       public DbSet<Calisanlarimiz> Calisanlarimiz =>Set<Calisanlarimiz>();  
+       public DbSet<IslemCalisan> IslemCalisanlar => Set<IslemCalisan>();
       
     }
 

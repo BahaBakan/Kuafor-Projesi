@@ -10,7 +10,8 @@ namespace KuaforProjesi.Data
 
 
         [ForeignKey("IslemId")]
-        public Islem? Islem { get; set; } 
+        public Islem? Islem { get; set; }  
+
 
          [Required]
         public int IslemId { get; set; }

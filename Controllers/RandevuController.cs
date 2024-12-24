@@ -69,8 +69,9 @@ namespace KuaforProjesi.Controllers
 
             // Çalışma saatlerini ayır
             var saatler = calisan.calismaSaati.Split('-').Select(int.Parse).ToList();
+            
             var doluSaatler = _context.Randevular
-                .Where(r => r.Tarih.Date == tarih.Date && r.calisanAdi == calisan.Ad)
+                .Where(r => r.calisanAdi == calisan.Ad)
                 .Select(r => r.Saat).ToList();
 
             var saatSecenekleri = Enumerable.Range(saatler[0], saatler[1] - saatler[0] + 1)
@@ -79,7 +80,7 @@ namespace KuaforProjesi.Controllers
                     Saat = saat,
                     Durum = doluSaatler.Contains(saat) ? "Dolu" : "Müsait"
                 }).ToList();
-
+            
             return Json(saatSecenekleri);
         }
     }

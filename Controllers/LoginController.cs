@@ -33,7 +33,8 @@ namespace KuaforProjesi.Controllers
                 .FirstOrDefaultAsync(u => u.Eposta == model.email && u.Sifre == model.password);
 
             if (user != null)
-            {
+            { 
+ 
                 TempData["Basarili"] = "Başarıyla giriş yaptınız";
                 return RedirectToAction("Index", "Home");
             }

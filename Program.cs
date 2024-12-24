@@ -1,4 +1,5 @@
 using KuaforProjesi.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,13 +7,27 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
-builder.Services.AddDbContext<DataContext>(options=>{
-    var config=builder.Configuration; 
-    var connectionString=config.GetConnectionString("database");
+// Configure DataContext
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    var config = builder.Configuration;
+    var connectionString = config.GetConnectionString("database");
     options.UseSqlite(connectionString);
 });
 
+// Configure IdentityContext
+builder.Services.AddDbContext<IdentityContext>(
+    options => options.UseSqlite(builder.Configuration["ConnectionStrings:database"]));
+
+// Configure Identity with custom password requirements
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = false; // Rakam gereksinimi kapatılır
+    options.Password.RequireNonAlphanumeric = false; // Özel karakter gereksinimi kapatılır
+    options.Password.RequireUppercase = false; // Büyük harf gereksinimi kapatılır
+    options.Password.RequiredLength = 3; // Minimum uzunluk 3 olarak ayarlanır
+})
+.AddEntityFrameworkStores<IdentityContext>();
 
 var app = builder.Build();
 
@@ -20,21 +35,21 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 app.UseRouting();
 
+app.UseAuthentication(); // Identity için Authentication Middleware'i ekle
 app.UseAuthorization();
-
-app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
+IdentitySeedData.IdentityTestUser(app); // Seed admin user
 
 app.Run();

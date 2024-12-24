@@ -50,6 +50,8 @@
                 </div>
             </div>
 
+            <input style="display:none;" name="Saat" asp-for="Saat" class="form-control" id="Saat" required />
+
             <!-- Submit Butonu -->
             <button type="submit" class="btn btn-primary w-100">Randevu Al</button>
         </form>
@@ -80,8 +82,10 @@
                 if (calisanId) {
                     $.getJSON('/Randevu/GetCalisanSaatleri', { calisanId: calisanId, tarih: tarih }, function (data) {
                         $.each(data, function (i, saat) {
-                            var renk = saat.Durum === "Dolu" ? "btn-danger" : "btn-success";
-                            $("#Saat").append(`<button type="button" class="btn ${renk}" value="${saat.Saat}">${saat.Saat} (${saat.Durum})</button>`);
+                            console.log(data);
+                            var renk = saat.durum === "Dolu" ? "btn-danger" : "btn-success";
+                            var disable = saat.durum === "Dolu" ? "disabled" : "";
+                            $("#Saat").append(`<button ${disable} type="button" class="btn ${renk}" value="${saat.saat}">${saat.saat} (${saat.durum})</button>`);
                         });
                     });
                 }

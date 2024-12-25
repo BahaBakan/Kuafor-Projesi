@@ -28,16 +28,32 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/bahab/Desktop/KuaforProjesi/Views/AdminPaneli/AdminPaneli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbGlcQWRtaW5QYW5lbGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/Calisanlarimiz/Calisanlarimiz.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhbmxhcmltaXpcQ2FsaXNhbmxhcmltaXouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahab/Desktop/KuaforProjesi/Views/CalisanYonetimi/CalisanYonetimi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhbllvbmV0aW1pXENhbGlzYW5Zb25ldGltaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bahab/Desktop/KuaforProjesi/Views/IslemYonetimi/IslemYonetimi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNsZW1Zb25ldGltaVxJc2xlbVlvbmV0aW1pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahab/Desktop/KuaforProjesi/Views/RandevuYonetimi/RandevuYonetimi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVlvbmV0aW1pXFJhbmRldnVZb25ldGltaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/Randevu/Randevu.cshtml]

@@ -1,10 +1,11 @@
 using KuaforProjesi.Data;
 using KuaforProjesi.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace KuaforProjesi.Controllers
-{
+{  
     public class RandevuController : Controller
     {
         private readonly DataContext _context;

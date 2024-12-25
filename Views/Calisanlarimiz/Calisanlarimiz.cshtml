@@ -1,3 +1,5 @@
+@model IEnumerable<KuaforProjesi.Data.Calisanlarimiz>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,54 +18,33 @@
             </div>
             
             <div class="row justify-content-center">
-                <!-- Çalışan 1 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h4 class="card-title">Ahmet</h4>
-                            <h6 class="card-subtitle text-muted mb-2">Uzmanlık: Saç Kesimi</h6>
-                            <p class="card-text">
-                                <strong>Yaptığı İşlemler:</strong><br>
-                                - Saç Kesimi<br>
-                                - Saç Boyama<br>
-                                - Sakal Traşı
-                            </p>
-                            <a href="#" class="btn btn-primary">Randevu Al</a>
+                @foreach (var calisan in Model)
+                {
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">@calisan.Ad @calisan.Soyad</h4>
+                                <h6 class="card-subtitle text-muted mb-2">Uzmanlık: @calisan.UzmanlikAlani</h6>
+                                <p class="card-text">
+                                    <strong>Çalışma Saatleri:</strong> @calisan.calismaSaati<br>
+                                    <strong>Yaptığı İşlemler:</strong><br>
+                                    @if (calisan.IslemCalisanlar != null && calisan.IslemCalisanlar.Count > 0)
+                                    {
+                                        foreach (var islemCalisan in calisan.IslemCalisanlar)
+                                        {
+                                            <span>- @islemCalisan.Islem?.IslemAdi<br></span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span>Belirtilmedi</span>
+                                    }
+                                </p>
+                                <a href="/Randevu/Randevu" class="btn btn-primary">Randevu Al</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Çalışan 2 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h4 class="card-title">Mehmet</h4>
-                            <h6 class="card-subtitle text-muted mb-2">Uzmanlık: Cilt Bakımı</h6>
-                            <p class="card-text">
-                                <strong>Yaptığı İşlemler:</strong><br>
-                                - Cilt Bakımı<br>
-                                - Maske Uygulaması<br>
-                                - Yüz Masajı
-                            </p>
-                            <a href="#" class="btn btn-primary">Randevu Al</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Çalışan 3 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h4 class="card-title">Zeynep</h4>
-                            <h6 class="card-subtitle text-muted mb-2">Uzmanlık: Makyaj</h6>
-                            <p class="card-text">
-                                <strong>Yaptığı İşlemler:</strong><br>
-                                - Makyaj<br>
-                                - Gelin Saçı ve Makyajı<br>
-                                - Özel Gün Makyajı
-                            </p>
-                            <a href="#" class="btn btn-primary">Randevu Al</a>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </section>

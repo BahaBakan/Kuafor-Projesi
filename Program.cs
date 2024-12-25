@@ -50,6 +50,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-IdentitySeedData.IdentityTestUser(app); // Seed admin user
+await IdentitySeedData.IdentityTestUser(app); // Seed admin user
 
 app.Run();

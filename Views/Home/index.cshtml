@@ -1,5 +1,8 @@
-
-
+@using KuaforProjesi.Data
+@{
+    var hizmetler = ViewBag.Hizmetler as List<Islem>;
+    var calisanlar = ViewBag.Calisanlar as List<Calisanlarimiz>;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,77 +29,51 @@
 </section>
 
     <!-- Services Section -->
+     <!-- Hizmetler Bölümü -->
     <section id="services" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Hizmetlerimiz</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="bi bi-scissors fs-1 text-primary mb-3"></i>
-                            <h5 class="card-title">Saç Kesimi</h5>
-                            <p class="card-text">Profesyonel saç kesim hizmetleri sunuyoruz. </p>
+                @foreach (var hizmet in hizmetler)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0 shadow">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">@hizmet.IslemAdi</h5>
+                                <p class="card-text">Hizmet Fiyatı: @hizmet.fiyati TL</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="bi bi-brush fs-1 text-primary mb-3"></i>
-                            <h5 class="card-title">Saç Boyama</h5>
-                            <p class="card-text">Modern tekniklerle saç boyama hizmeti.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 shadow">
-                        <div class="card-body text-center">
-                            <i class="bi bi-droplet fs-1 text-primary mb-3"></i>
-                            <h5 class="card-title">Cilt Bakımı</h5>
-                            <p class="card-text">Sağlıklı bir cilt için uzman bakım hizmeti.</p>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="bg-light py-5">
+     <section id="team" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-4">Çalışanlarımız</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 shadow text-center">
-                        <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Ahmet" style="width: 150px; height: 150px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Ahmet</h5>
-                            <p class="card-text">Saç Kesimi Uzmanı</p>
+                @foreach (var calisan in calisanlar)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0 shadow text-center">
+                            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="@calisan.Ad @calisan.Soyad" style="width: 150px; height: 150px;">
+                            <div class="card-body">
+                                <h5 class="card-title">@calisan.Ad @calisan.Soyad</h5>
+                                <p class="card-text">Uzmanlık: 
+                                    @foreach (var islemCalisan in calisan.IslemCalisanlar)
+                                    {
+                                        @islemCalisan.Islem.IslemAdi
+                                    }
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 shadow text-center">
-                        <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Mehmet" style="width: 150px; height: 150px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Mehmet</h5>
-                            <p class="card-text">Saç Boyama Uzmanı</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 shadow text-center">
-                        <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Fatma" style="width: 150px; height: 150px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Fatma</h5>
-                            <p class="card-text">Cilt Bakımı Uzmanı</p>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </section>
-
   <section class="py-5 bg-light" id="working-hours">
     <div class="container">
         <h2 class="text-center mb-4">Çalışma Saatlerimiz</h2>

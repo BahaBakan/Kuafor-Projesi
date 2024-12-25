@@ -28,18 +28,34 @@
                     </li>
                      <li class="nav-item">
                         <a class="nav-link" href="/SacModeliniBul/SacModeliniBul">Saç Modelini Bul</a>
-                    </li>
-                </ul>
-                <!-- Sağ Taraf: Giriş Yap ve Kayıt Ol -->
-                <ul class="navbar-nav ms-auto pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Login/Login">Giriş Yap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Register/Register">Kayıt Ol</a>
-                    </li>
+                    </li> 
                     
                 </ul>
+                <!-- Sağ Taraf: Giriş Yap ve Kayıt Ol -->
+               <ul class="navbar-nav ms-auto pe-3">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <li class="nav-item">
+            <a class="nav-link" href="/Login/Logout">Çıkış Yap</a>
+        </li>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <li class="nav-item">
+                <a class="nav-link" href="/AdminPaneli/AdminPaneli">Admin Paneli</a>
+            </li>
+        }
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link" href="/Login/Login">Giriş Yap</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Register/Register">Kayıt Ol</a>
+        </li>
+    }
+</ul>
             </div>
         </nav>
     </div>

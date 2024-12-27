@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 @model Register 
 <html lang="en">
@@ -23,18 +22,22 @@
     <div class="form-container">
         <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
             <h2 class="text-center mb-4">Kayıt Ol</h2>
-           <form asp-controller="Register" asp-action="Register" method="post">
+            <form asp-controller="Register" asp-action="Register" method="post">
+                @Html.AntiForgeryToken()
                 <div class="mb-3">
                     <label asp-for="Ad" class="form-label">Kullanıcı Adı</label>
-                    <input asp-for="Ad" class="form-control" >
+                    <input asp-for="Ad" class="form-control" required>
+                    <span asp-validation-for="Ad" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="Eposta" class="form-label">Eposta</label>
-                    <input asp-for="Eposta" class="form-control" >
+                    <input asp-for="Eposta" class="form-control" type="email" required>
+                    <span asp-validation-for="Eposta" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                   <label asp-for="Sifre" class="form-label">Sifre</label>
-                    <input asp-for="Sifre" class="form-control" >
+                   <label asp-for="Sifre" class="form-label">Şifre</label>
+                    <input asp-for="Sifre" class="form-control" type="password" required>
+                    <span asp-validation-for="Sifre" class="text-danger"></span>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Kayıt Ol</button>
             </form>

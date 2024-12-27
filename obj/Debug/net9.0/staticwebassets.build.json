@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nr5kkk18uwcH1x6IADSBkS76wLRfJ7kv7cwCrTI9jt8=",
+  "Hash": "dyB5J/GDbXxmPz+4W++bbnHO0WzmR9HIuEyaB88fZz4=",
   "Source": "KuaforProjesi",
   "BasePath": "_content/KuaforProjesi",
   "Mode": "Default",
@@ -1107,6 +1107,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-fq6s2undoq.gz",
+      "SourceId": "KuaforProjesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/KuaforProjesi",
+      "RelativePath": "logs/error_log#[.{fingerprint=fq6s2undoq}]?.txt.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "nytfc5ejkh",
+      "Integrity": "kVqi/2gvk+u/VZiT9wR9K6YaRjTF+DMdogPc2YVjZzU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt"
     },
     {
       "Identity": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s7vd5we56t-r4e9w2rdcm.gz",
@@ -2640,6 +2661,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
+      "SourceId": "KuaforProjesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\",
+      "BasePath": "_content/KuaforProjesi",
+      "RelativePath": "logs/error_log#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fq6s2undoq",
+      "Integrity": "Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logs\\error_log.txt"
+    },
+    {
+      "Identity": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\images.jpg",
+      "SourceId": "KuaforProjesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\",
+      "BasePath": "_content/KuaforProjesi",
+      "RelativePath": "uploads/images#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sdzl2u2puf",
+      "Integrity": "oH/xYRY8OZzE9lgwu3u1vCt/Bxydigq+j+/da3ZwYjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\sacsekli.jpg",
+      "SourceId": "KuaforProjesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\",
+      "BasePath": "_content/KuaforProjesi",
+      "RelativePath": "uploads/sacsekli#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h888yu0uto",
+      "Integrity": "sfUUYdS0VFAyHWgbWvGtif6kGWrzfQoszjFjFJhJdi8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\sacsekli.jpg"
     }
   ],
   "Endpoints": [
@@ -21198,6 +21282,468 @@
         {
           "Name": "integrity",
           "Value": "sha256-JKWeHUaANNuffeRatdc54UCb84RoxjEw/nTq8Mops8Y="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.fq6s2undoq.txt",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-fq6s2undoq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000724637681"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1379"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kVqi/2gvk+u/VZiT9wR9K6YaRjTF+DMdogPc2YVjZzU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fq6s2undoq"
+        },
+        {
+          "Name": "label",
+          "Value": "logs/error_log.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.fq6s2undoq.txt",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13416"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fq6s2undoq"
+        },
+        {
+          "Name": "label",
+          "Value": "logs/error_log.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.fq6s2undoq.txt.gz",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-fq6s2undoq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1379"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kVqi/2gvk+u/VZiT9wR9K6YaRjTF+DMdogPc2YVjZzU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fq6s2undoq"
+        },
+        {
+          "Name": "label",
+          "Value": "logs/error_log.txt.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kVqi/2gvk+u/VZiT9wR9K6YaRjTF+DMdogPc2YVjZzU="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.txt",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-fq6s2undoq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000724637681"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1379"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kVqi/2gvk+u/VZiT9wR9K6YaRjTF+DMdogPc2YVjZzU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.txt",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13416"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.txt.gz",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-fq6s2undoq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1379"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kVqi/2gvk+u/VZiT9wR9K6YaRjTF+DMdogPc2YVjZzU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kVqi/2gvk+u/VZiT9wR9K6YaRjTF+DMdogPc2YVjZzU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images.jpg",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oH/xYRY8OZzE9lgwu3u1vCt/Bxydigq+j+/da3ZwYjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oH/xYRY8OZzE9lgwu3u1vCt/Bxydigq+j+/da3ZwYjw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images.sdzl2u2puf.jpg",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oH/xYRY8OZzE9lgwu3u1vCt/Bxydigq+j+/da3ZwYjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 10:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sdzl2u2puf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oH/xYRY8OZzE9lgwu3u1vCt/Bxydigq+j+/da3ZwYjw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/sacsekli.h888yu0uto.jpg",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\sacsekli.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "486482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sfUUYdS0VFAyHWgbWvGtif6kGWrzfQoszjFjFJhJdi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 00:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h888yu0uto"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/sacsekli.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sfUUYdS0VFAyHWgbWvGtif6kGWrzfQoszjFjFJhJdi8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/sacsekli.jpg",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\sacsekli.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "486482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sfUUYdS0VFAyHWgbWvGtif6kGWrzfQoszjFjFJhJdi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 00:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sfUUYdS0VFAyHWgbWvGtif6kGWrzfQoszjFjFJhJdi8="
         }
       ]
     }

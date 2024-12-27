@@ -253,6 +253,18 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
+      "PackagePath": "staticwebassets\\logs\\error_log.txt"
+    },
+    {
+      "Id": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\images.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\uploads\\sacsekli.jpg",
+      "PackagePath": "staticwebassets\\uploads\\sacsekli.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.KuaforProjesi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

@@ -40,22 +40,16 @@ namespace KuaforProjesi.Controllers
                 var result = await _signInManager.PasswordSignInAsync(user, password, false, false);
                 if (result.Succeeded)
                 {
+                    // Rol bazlı yönlendirme
                     if (await _userManager.IsInRoleAsync(user, "Admin"))
                     {
                         return RedirectToAction("AdminPaneli", "AdminPaneli");
                     }
-
-                    return RedirectToAction("Index", "Home");
+                    else if (await _userManager.IsInRoleAsync(user, "Customer"))
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
-            }
-
-            // Registers tablosundan kontrol
-            var registerUser = _context.Registers.FirstOrDefault(r => r.Eposta == email && r.Sifre == password);
-            if (registerUser != null)
-            {
-                // Kullanıcı bulundu, giriş başarılı
-                TempData["Basarili"] = "Giriş başarılı!";
-                return RedirectToAction("Index", "Home");
             }
 
             TempData["Basarisiz"] = "E-mail veya şifre yanlış.";

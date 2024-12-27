@@ -40,8 +40,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhbllvbmV0aW1pXENhbGlzYW5Zb25ldGltaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bahab/Desktop/KuaforProjesi/Views/CalisanYonetimi/Guncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhbllvbmV0aW1pXEd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahab/Desktop/KuaforProjesi/Views/IslemYonetimi/Guncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNsZW1Zb25ldGltaVxHdW5jZWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/IslemYonetimi/IslemYonetimi.cshtml]
@@ -50,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bahab/Desktop/KuaforProjesi/Views/RandevuYonetimi/Guncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVlvbmV0aW1pXEd1bmNlbGxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bahab/Desktop/KuaforProjesi/Views/RandevuYonetimi/RandevuYonetimi.cshtml]

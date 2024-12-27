@@ -1,0 +1,153 @@
+[26.12.2024 03:29:27] - Base64 kodlama hatası: Could not find a part of the path 'C:\Users\bahab\Desktop\KuaforProjesi\wwwroot\images\sacsekli.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.ReadAllBytes(String path)
+   at KuaforProjesi.Controllers.SacModeliniBulController.EncodeImage(String imagePath) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 99
+[26.12.2024 03:29:27] - OpenAI API isteği hatası: Could not find a part of the path 'C:\Users\bahab\Desktop\KuaforProjesi\wwwroot\images\sacsekli.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.ReadAllBytes(String path)
+   at KuaforProjesi.Controllers.SacModeliniBulController.EncodeImage(String imagePath) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 99
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 131
+[26.12.2024 03:29:27] - FindModel metodu hatası: Could not find a part of the path 'C:\Users\bahab\Desktop\KuaforProjesi\wwwroot\images\sacsekli.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.ReadAllBytes(String path)
+   at KuaforProjesi.Controllers.SacModeliniBulController.EncodeImage(String imagePath) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 99
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 131
+   at KuaforProjesi.Controllers.SacModeliniBulController.FindModel(IFormFile photo) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 50
+[26.12.2024 03:33:32] - OpenAI API isteği hatası: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.
+   at System.Net.Http.Headers.HttpHeaders.GetHeaderDescriptor(String name)
+   at System.Net.Http.Headers.HttpHeaders.Add(String name, String value)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image)
+[26.12.2024 03:33:32] - FindModel metodu hatası: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.
+   at System.Net.Http.Headers.HttpHeaders.GetHeaderDescriptor(String name)
+   at System.Net.Http.Headers.HttpHeaders.Add(String name, String value)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image)
+   at KuaforProjesi.Controllers.SacModeliniBulController.FindModel(IFormFile photo)
+[26.12.2024 03:38:02] - OpenAI API isteği hatası: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.
+   at System.Net.Http.Headers.HttpHeaders.GetHeaderDescriptor(String name)
+   at System.Net.Http.Headers.HttpHeaders.Add(String name, String value)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 153
+[26.12.2024 03:38:02] - FindModel metodu hatası: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.
+   at System.Net.Http.Headers.HttpHeaders.GetHeaderDescriptor(String name)
+   at System.Net.Http.Headers.HttpHeaders.Add(String name, String value)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 153
+   at KuaforProjesi.Controllers.SacModeliniBulController.FindModel(IFormFile photo) in C:\Users\bahab\Desktop\KuaforProjesi\Controllers\SacModeliniBulController.cs:line 50
+[26.12.2024 03:42:11] - Base64 kodlama hatası: Could not find file 'C:\Users\bahab\Desktop\KuaforProjesi\wwwroot\uploads\sacsekli.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.ReadAllBytes(String path)
+   at KuaforProjesi.Controllers.SacModeliniBulController.EncodeImage(String imagePath)
+[26.12.2024 03:42:11] - OpenAI API isteği hatası: Could not find file 'C:\Users\bahab\Desktop\KuaforProjesi\wwwroot\uploads\sacsekli.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.ReadAllBytes(String path)
+   at KuaforProjesi.Controllers.SacModeliniBulController.EncodeImage(String imagePath)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image)
+[26.12.2024 03:42:11] - FindModel metodu hatası: Could not find file 'C:\Users\bahab\Desktop\KuaforProjesi\wwwroot\uploads\sacsekli.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.ReadAllBytes(String path)
+   at KuaforProjesi.Controllers.SacModeliniBulController.EncodeImage(String imagePath)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image)
+   at KuaforProjesi.Controllers.SacModeliniBulController.FindModel(IFormFile photo)
+[26.12.2024 03:43:01] - OpenAI API isteği hatası: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.
+   at System.Net.Http.Headers.HttpHeaders.GetHeaderDescriptor(String name)
+   at System.Net.Http.Headers.HttpHeaders.Add(String name, String value)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image)
+[26.12.2024 03:43:01] - FindModel metodu hatası: Misused header name, 'Content-Type'. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.
+   at System.Net.Http.Headers.HttpHeaders.GetHeaderDescriptor(String name)
+   at System.Net.Http.Headers.HttpHeaders.Add(String name, String value)
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String base64Image)
+   at KuaforProjesi.Controllers.SacModeliniBulController.FindModel(IFormFile photo)
+[26.12.2024 03:57:39] - Test log mesajı.
+[26.12.2024 04:01:36] - response.IsSuccessStatusCode
+[26.12.2024 04:01:56] - response.IsSuccessStatusCode
+[26.12.2024 04:45:54] - chat comp
+[26.12.2024 04:49:02] - chatclient baslatiliyor
+[26.12.2024 05:00:35] - chatclient baslatiliyor
+[26.12.2024 05:00:35] - ChatClient başlatılırken hata oluştu: API key bulunamadı. Lütfen 'OPENAI_API_KEY' ortam değişkenini kontrol edin.
+   at KuaforProjesi.Controllers.SacModeliniBulController.GetOpenAiResponse(String imagePath)
+[26.12.2024 05:03:26] - chatclient baslatiliyor
+[26.12.2024 05:03:26] - chatclient baslatildi
+[26.12.2024 05:04:37] - chatclient baslatiliyor
+[26.12.2024 05:04:37] - chatclient baslatildi2
+[26.12.2024 05:05:11] - chatclient baslatiliyor
+[26.12.2024 05:05:28] - chatclient baslatildi2
+[26.12.2024 05:06:42] - chatclient baslatiliyor
+[26.12.2024 05:07:01] - chatclient baslatildi2
+[26.12.2024 05:07:23] - chatclient baslatiliyor
+[26.12.2024 05:07:44] - chatclient baslatildi3
+[26.12.2024 11:21:10] - chatclient baslatiliyor
+[26.12.2024 11:21:31] - chatclient baslatildi3
+[26.12.2024 12:29:16] - chatclient baslatiliyor
+[26.12.2024 12:29:33] - chatclient baslatildi3
+[26.12.2024 14:38:16] - chatclient baslatiliyor
+[26.12.2024 14:38:34] - chatclient baslatildi3
+[26.12.2024 14:39:37] - chatclient baslatiliyor
+[26.12.2024 14:39:52] - chatclient baslatildi3
+[26.12.2024 14:44:01] - chatclient baslatiliyor
+[26.12.2024 14:44:20] - chatclient baslatildi3
+[26.12.2024 14:59:40] - chatclient baslatiliyor
+[26.12.2024 14:59:57] - chatclient baslatildi3
+[26.12.2024 15:10:33] - chatclient baslatiliyor
+[26.12.2024 15:10:50] - chatclient baslatildi3
+[26.12.2024 15:12:18] - chatclient baslatiliyor
+[26.12.2024 15:13:03] - chatclient baslatildi3
+[26.12.2024 15:16:31] - chatclient baslatiliyor
+[26.12.2024 15:16:59] - chatclient baslatildi3
+[26.12.2024 15:19:26] - chatclient baslatiliyor
+[26.12.2024 15:19:59] - chatclient baslatildi3
+[26.12.2024 15:30:32] - chatclient baslatiliyor
+[26.12.2024 15:30:59] - chatclient baslatildi3
+[26.12.2024 15:33:23] - chatclient baslatiliyor
+[26.12.2024 15:33:39] - chatclient baslatildi3
+[26.12.2024 15:34:09] - chatclient baslatiliyor
+[26.12.2024 15:34:37] - chatclient baslatildi3
+[26.12.2024 15:35:42] - chatclient baslatiliyor
+[26.12.2024 15:36:08] - chatclient baslatildi3
+[26.12.2024 15:40:19] - chatclient baslatiliyor
+[26.12.2024 15:40:45] - chatclient baslatildi3
+[26.12.2024 15:46:44] - chatclient baslatiliyor
+[26.12.2024 15:48:16] - chatclient baslatiliyor
+[26.12.2024 15:50:38] - chatclient baslatiliyor
+[26.12.2024 15:51:54] - chatclient baslatiliyor
+[27.12.2024 00:33:07] - chatclient baslatiliyor
+[27.12.2024 01:10:41] - chatclient baslatiliyor
+[27.12.2024 01:17:32] - chatclient baslatiliyor
+[27.12.2024 01:33:43] - chatclient baslatiliyor
+[27.12.2024 01:36:56] - chatclient baslatiliyor
+[27.12.2024 01:39:31] - chatclient baslatiliyor
+[27.12.2024 01:39:49] - chatclient baslatiliyor
+[27.12.2024 01:41:39] - chatclient baslatiliyor
+[27.12.2024 01:42:00] - chatclient baslatiliyor
+[27.12.2024 02:09:19] - chatclient baslatiliyor
+[27.12.2024 02:12:42] - chatclient baslatiliyor
+[27.12.2024 02:19:12] - ChatClient başlatılıyor
+[27.12.2024 02:20:13] - ChatClient başlatılıyor
+[27.12.2024 02:24:57] - ChatClient başlatılıyor
+[27.12.2024 02:28:56] - ChatClient başlatılıyor
+[27.12.2024 02:30:22] - ChatClient başlatılıyor
+[27.12.2024 02:39:40] - ChatClient başlatılıyor
+[27.12.2024 02:41:43] - ChatClient başlatılıyor
+[27.12.2024 02:42:31] - ChatClient başlatılıyor
+[27.12.2024 02:43:49] - ChatClient başlatılıyor
+[27.12.2024 02:46:20] - ChatClient başlatılıyor
+[27.12.2024 02:46:37] - ChatClient başlatılıyor
+[27.12.2024 02:47:18] - ChatClient başlatılıyor
+[27.12.2024 02:50:10] - ChatClient başlatılıyor
+[27.12.2024 02:51:36] - ChatClient başlatılıyor
+[27.12.2024 02:54:25] - ChatClient başlatılıyor
+[27.12.2024 02:58:16] - ChatClient başlatılıyor
+[27.12.2024 07:09:05] - ChatClient başlatılıyor
+[27.12.2024 09:01:08] - ChatClient başlatılıyor
+[27.12.2024 11:06:42] - ChatClient başlatılıyor
+[27.12.2024 11:09:24] - ChatClient başlatılıyor
+[27.12.2024 13:38:31] - ChatClient başlatılıyor

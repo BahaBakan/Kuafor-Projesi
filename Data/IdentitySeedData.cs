@@ -13,7 +13,6 @@ namespace KuaforProjesi.Data
             using var scope = app.ApplicationServices.CreateScope();
             var context = scope.ServiceProvider.GetRequiredService<IdentityContext>();
 
-            // Veritabanını migrate et
             if (context.Database.GetPendingMigrations().Any())
             {
                 await context.Database.MigrateAsync();
@@ -22,10 +21,14 @@ namespace KuaforProjesi.Data
             var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
 
-            // Admin rolünü oluştur
+            // Admin ve Customer rolleri oluştur
             if (!await roleManager.RoleExistsAsync("Admin"))
             {
                 await roleManager.CreateAsync(new IdentityRole("Admin"));
+            }
+            if (!await roleManager.RoleExistsAsync("Customer"))
+            {
+                await roleManager.CreateAsync(new IdentityRole("Customer"));
             }
 
             // Admin kullanıcısını oluştur ve Admin rolüne ata

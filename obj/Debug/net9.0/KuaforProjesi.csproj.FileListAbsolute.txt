@@ -207,3 +207,17 @@ C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnal
 C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\KuaforProjesi.sourcelink.json
 C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\System.Private.Windows.Core.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\runtimes\win\lib\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\SixLabors.ImageSharp.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\OpenAI.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\KuaforProjesi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\compressed\s6az3dsc6u-fq6s2undoq.gz

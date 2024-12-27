@@ -1,0 +1,38 @@
+@model KuaforProjesi.Data.Calisanlarimiz
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çalışan Güncelle</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="mb-4">Çalışan Güncelle</h1>
+
+        <form asp-action="Guncelle" method="post">
+            <input type="hidden" name="CalisanId" value="@Model.CalisanId" />
+            <div class="mb-3">
+                <label for="Ad" class="form-label">Ad</label>
+                <input type="text" name="Ad" class="form-control" value="@Model.Ad" required>
+            </div>
+            <div class="mb-3">
+                <label for="Soyad" class="form-label">Soyad</label>
+                <input type="text" name="Soyad" class="form-control" value="@Model.Soyad" required>
+            </div>
+            <div class="mb-3">
+                <label for="UzmanlikAlani" class="form-label">Uzmanlık Alanı</label>
+                <input type="text" name="UzmanlikAlani" class="form-control" value="@Model.UzmanlikAlani" required>
+            </div>
+            <div class="mb-3">
+                <label for="calismaSaati" class="form-label">Çalışma Saati</label>
+                <input type="text" name="calismaSaati" class="form-control" value="@Model.calismaSaati" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

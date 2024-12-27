@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KuaforProjesi.Controllers
 {  
+    [Authorize]
     public class RandevuController : Controller
     {
         private readonly DataContext _context;

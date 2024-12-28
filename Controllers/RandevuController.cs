@@ -3,6 +3,7 @@ using KuaforProjesi.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace KuaforProjesi.Controllers
 {  
@@ -33,7 +34,7 @@ namespace KuaforProjesi.Controllers
                 var randevu = new Randevu
                 {
                     IslemId = model.IslemId,
-                    MusteriAdi = model.MusteriAdi,
+                    MusteriAdi = User.Identity.Name, // Giriş yapmış kullanıcının adını al
                     Tarih = model.Tarih,
                     Saat = model.Saat,
                     calisanAdi = _context.Calisanlarimiz.FirstOrDefault(c => c.CalisanId == model.CalisanId)?.Ad,
@@ -41,6 +42,18 @@ namespace KuaforProjesi.Controllers
                 };
 
                 _context.Randevular.Add(randevu);
+
+                // Günlük kazancı güncelle
+                var calisan = _context.Calisanlarimiz.FirstOrDefault(c => c.CalisanId == model.CalisanId);
+                if (calisan != null)
+                {
+                    var islem = _context.Islemler.FirstOrDefault(i => i.IslemId == model.IslemId);
+                    if (islem != null)
+                    {
+                        calisan.GunlukKazanc += islem.fiyati;
+                    }
+                }
+
                 _context.SaveChanges();
                 return RedirectToAction("Randevu");
             }
@@ -84,6 +97,18 @@ namespace KuaforProjesi.Controllers
                 }).ToList();
             
             return Json(saatSecenekleri);
+        }
+
+        // Yeni API endpoint: İşlem fiyatını döner
+        [HttpGet]
+        public JsonResult GetIslemFiyati(int islemId)
+        {
+            var islem = _context.Islemler
+                .Where(i => i.IslemId == islemId)
+                .Select(i => new { i.fiyati })
+                .FirstOrDefault();
+
+            return Json(islem);
         }
     }
 }

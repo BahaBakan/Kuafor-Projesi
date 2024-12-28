@@ -40,7 +40,7 @@
                     <th>Soyad</th>
                     <th>Uzmanlık Alanı</th>
                     <th>Çalışma saati</th>
-                    <th>İşlemler</th>
+                    <th>Günlük kazanç</th>
                 </tr>
             </thead>
             <tbody>
@@ -52,6 +52,7 @@
                         <td>@calisan.Soyad</td>
                         <td>@calisan.UzmanlikAlani</td> 
                         <td>@calisan.calismaSaati</td> 
+                        <td>@calisan.GunlukKazanc</td>
                         <td> 
                             <a asp-action="Guncelle" asp-route-id="@calisan.CalisanId" class="btn btn-primary btn-sm">Edit</a> 
                             <form asp-action="Sil" method="post" style="display:inline;">

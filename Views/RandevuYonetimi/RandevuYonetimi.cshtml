@@ -15,7 +15,9 @@
         <table class="table table-bordered table-hover">
             <thead class="table-dark">
                 <tr>
-                    <th>ID</th>
+                    <th>ID</th> 
+                    <th>Müşteri Adı</th>
+                    <th>Çalışan Adı</th>
                     <th>İşlem Adı</th>
                     <th>Tarih</th>
                     <th>Saat</th>
@@ -27,6 +29,8 @@
                 {
                     <tr>
                         <td>@randevu.RandevuId</td>
+                        <td>@randevu.MusteriAdi</td>
+                        <td>@randevu.calisanAdi</td>
                         <td>@randevu.IslemAdi</td>
                         <td>@randevu.Tarih.ToShortDateString()</td>
                         <td>@randevu.Saat</td>

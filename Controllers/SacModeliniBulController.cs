@@ -12,7 +12,7 @@ namespace KuaforProjesi.Controllers
 {
     public class SacModeliniBulController : Controller
     {
-        private const string ApiKey = "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";
+        private const string ApiKey = "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";
 
         public IActionResult SacModeliniBul()
         {
@@ -90,7 +90,7 @@ namespace KuaforProjesi.Controllers
             {
                 Logger.LogError("ChatClient başlatılıyor");
 
-                string apiKey = "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";
+                string apiKey = "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";
                 if (string.IsNullOrEmpty(apiKey))
                 {
                     throw new InvalidOperationException("API key bulunamadı. Lütfen 'OPENAI_API_KEY' ortam değişkenini kontrol edin.");

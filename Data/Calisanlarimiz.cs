@@ -22,6 +22,8 @@ namespace KuaforProjesi.Data
         // Çalışanın yapabildiği işlemler 
 
         public List<Randevu>? randevular {get; set;} 
-           public List<IslemCalisan>? IslemCalisanlar { get; set; }
+           public List<IslemCalisan>? IslemCalisanlar { get; set; } 
+
+            public int GunlukKazanc { get; set; }
     }
 }

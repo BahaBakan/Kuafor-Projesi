@@ -1146,8 +1146,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fq6s2undoq</Fingerprint>
-      <Integrity>Fzua+zQVteV63JfYJYEnEtoGkAfY5OGW8PSDh0q6q3I=</Integrity>
+      <Fingerprint>vf0anrvb2u</Fingerprint>
+      <Integrity>RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\logs\error_log.txt'))</OriginalItemSpec>

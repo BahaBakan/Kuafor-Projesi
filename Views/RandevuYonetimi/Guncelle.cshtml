@@ -14,6 +14,17 @@
 
         <form asp-action="Guncelle" method="post">
             <input type="hidden" name="RandevuId" value="@Model.RandevuId" />
+          
+          <div class="mb-3">
+                <label for="MusteriAdi" class="form-label">Müşteri Adı</label>
+                <input type="text" name="MusteriAdi" class="form-control" value="@Model.MusteriAdi" required>
+
+                <div class="mb-3">
+                <label for="CalisanAdi" class="form-label">Çalışan Adı</label>
+                <input type="text" name="CalisanAdi" class="form-control" value="@Model.calisanAdi" required>
+            </div>
+            
+            </div>
             <div class="mb-3">
                 <label for="IslemAdi" class="form-label">İşlem Adı</label>
                 <input type="text" name="IslemAdi" class="form-control" value="@Model.IslemAdi" required>

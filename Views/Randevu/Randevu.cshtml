@@ -16,12 +16,6 @@
     <div class="container">
         <h2 class="text-center mb-4">Randevu Al</h2>
         <form asp-action="Randevu" method="post">
-            <!-- Müşteri Adı -->
-            <div class="mb-3">
-                <label asp-for="MusteriAdi" class="form-label">Müşteri Adı</label>
-                <input asp-for="MusteriAdi" class="form-control" id="MusteriAdi" required />
-            </div>
-
             <!-- İşlem Seçimi -->
             <div class="mb-3">
                 <label asp-for="IslemId" class="form-label">İşlem Seç</label>
@@ -32,6 +26,12 @@
                         <option value="@islem.IslemId">@islem.IslemAdi</option>
                     }
                 </select>
+            </div>
+
+            <!-- İşlem Fiyatı -->
+            <div class="mb-3">
+                <label class="form-label">İşlem Fiyatı</label>
+                <input type="text" class="form-control" id="IslemFiyati" readonly />
             </div>
 
             <!-- Çalışan Seçimi -->
@@ -63,12 +63,17 @@
                 var islemId = $(this).val();
                 $("#CalisanId").empty().append('<option value="">Çalışan Seçin</option>');
                 $("#Saat").empty();
+                $("#IslemFiyati").val("");
 
                 if (islemId) {
                     $.getJSON('/Randevu/GetCalisanlarByIslem', { islemId: islemId }, function (data) {
                         $.each(data, function (i, calisan) {
                             $("#CalisanId").append(`<option value="${calisan.calisanId}">${calisan.ad} ${calisan.soyad}</option>`);
                         });
+                    });
+
+                    $.getJSON('/Randevu/GetIslemFiyati', { islemId: islemId }, function (data) {
+                        $("#IslemFiyati").val(data.fiyati + " TL");
                     });
                 }
             });

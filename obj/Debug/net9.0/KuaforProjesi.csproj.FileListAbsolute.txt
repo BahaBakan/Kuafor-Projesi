@@ -220,4 +220,4 @@ C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Microsoft.AspNetCore.OpenA
 C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\KuaforProjesi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\bahab\Desktop\KuaforProjesi\bin\Debug\net9.0\Azure.Core.dll
-C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\compressed\s6az3dsc6u-vf0anrvb2u.gz
+C:\Users\bahab\Desktop\KuaforProjesi\obj\Debug\net9.0\compressed\s6az3dsc6u-2f8yli0vxb.gz

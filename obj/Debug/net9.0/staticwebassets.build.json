@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ViGZh7FSeTxWt99Tj+yEqiFMDmzicCeQosJwEBjlrfc=",
+  "Hash": "vBLTMl/mgaarfdBF0f9DfTd8rGd8aLeeM9fxKa0lGZY=",
   "Source": "KuaforProjesi",
   "BasePath": "_content/KuaforProjesi",
   "Mode": "Default",
@@ -1109,12 +1109,12 @@
       "OriginalItemSpec": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-vf0anrvb2u.gz",
+      "Identity": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-2f8yli0vxb.gz",
       "SourceId": "KuaforProjesi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/KuaforProjesi",
-      "RelativePath": "logs/error_log#[.{fingerprint=vf0anrvb2u}]?.txt.gz",
+      "RelativePath": "logs/error_log#[.{fingerprint=2f8yli0vxb}]?.txt.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1123,8 +1123,8 @@
       "RelatedAsset": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ab8zz71msp",
-      "Integrity": "Ktyine4PVTaYupVaKw5VD8667wEBxSnJGM2bGAYJ9Do=",
+      "Fingerprint": "hk070po7vo",
+      "Integrity": "oUIrha5T4pAQLJfK+kD84qYn3JzGI7xMeVHe9Srt2gE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt"
@@ -2677,8 +2677,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vf0anrvb2u",
-      "Integrity": "RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww=",
+      "Fingerprint": "2f8yli0vxb",
+      "Integrity": "4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logs\\error_log.txt"
@@ -21286,13 +21286,13 @@
       ]
     },
     {
-      "Route": "logs/error_log.txt",
-      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-vf0anrvb2u.gz",
+      "Route": "logs/error_log.2f8yli0vxb.txt",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-2f8yli0vxb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000703729768"
+          "Quality": "0.000702247191"
         }
       ],
       "ResponseHeaders": [
@@ -21302,19 +21302,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1420"
+          "Value": "1423"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ktyine4PVTaYupVaKw5VD8667wEBxSnJGM2bGAYJ9Do=\""
+          "Value": "\"oUIrha5T4pAQLJfK+kD84qYn3JzGI7xMeVHe9Srt2gE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -21330,18 +21330,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww=\""
+          "Value": "W/\"4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "2f8yli0vxb"
+        },
+        {
+          "Name": "label",
+          "Value": "logs/error_log.txt"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww="
+          "Value": "sha256-4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs="
         }
       ]
     },
     {
-      "Route": "logs/error_log.txt",
+      "Route": "logs/error_log.2f8yli0vxb.txt",
       "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21351,7 +21359,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13780"
+          "Value": "13832"
         },
         {
           "Name": "Content-Type",
@@ -21359,121 +21367,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww=\""
+          "Value": "\"4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww="
-        }
-      ]
-    },
-    {
-      "Route": "logs/error_log.txt.gz",
-      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-vf0anrvb2u.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1420"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Ktyine4PVTaYupVaKw5VD8667wEBxSnJGM2bGAYJ9Do=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Ktyine4PVTaYupVaKw5VD8667wEBxSnJGM2bGAYJ9Do="
-        }
-      ]
-    },
-    {
-      "Route": "logs/error_log.vf0anrvb2u.txt",
-      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-vf0anrvb2u.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000703729768"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1420"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Ktyine4PVTaYupVaKw5VD8667wEBxSnJGM2bGAYJ9Do=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vf0anrvb2u"
+          "Value": "2f8yli0vxb"
         },
         {
           "Name": "label",
@@ -21481,13 +21389,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww="
+          "Value": "sha256-4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs="
         }
       ]
     },
     {
-      "Route": "logs/error_log.vf0anrvb2u.txt",
-      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
+      "Route": "logs/error_log.2f8yli0vxb.txt.gz",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-2f8yli0vxb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21496,7 +21404,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13780"
+          "Value": "1423"
         },
         {
           "Name": "Content-Type",
@@ -21504,56 +21412,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww=\""
+          "Value": "\"oUIrha5T4pAQLJfK+kD84qYn3JzGI7xMeVHe9Srt2gE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vf0anrvb2u"
-        },
-        {
-          "Name": "label",
-          "Value": "logs/error_log.txt"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RWwypkadzfnPQ1Z4yng6wAMWWy1/LK4gngU+vGhCmww="
-        }
-      ]
-    },
-    {
-      "Route": "logs/error_log.vf0anrvb2u.txt.gz",
-      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-vf0anrvb2u.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1420"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Ktyine4PVTaYupVaKw5VD8667wEBxSnJGM2bGAYJ9Do=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21571,7 +21434,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vf0anrvb2u"
+          "Value": "2f8yli0vxb"
         },
         {
           "Name": "label",
@@ -21579,7 +21442,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ktyine4PVTaYupVaKw5VD8667wEBxSnJGM2bGAYJ9Do="
+          "Value": "sha256-oUIrha5T4pAQLJfK+kD84qYn3JzGI7xMeVHe9Srt2gE="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.txt",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-2f8yli0vxb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000702247191"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1423"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUIrha5T4pAQLJfK+kD84qYn3JzGI7xMeVHe9Srt2gE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.txt",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\wwwroot\\logs\\error_log.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4iPHDG01axTVEMmtPN+UyPD5cRDmuWvV82vyb60aIJs="
+        }
+      ]
+    },
+    {
+      "Route": "logs/error_log.txt.gz",
+      "AssetFile": "C:\\Users\\bahab\\Desktop\\KuaforProjesi\\obj\\Debug\\net9.0\\compressed\\s6az3dsc6u-2f8yli0vxb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUIrha5T4pAQLJfK+kD84qYn3JzGI7xMeVHe9Srt2gE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oUIrha5T4pAQLJfK+kD84qYn3JzGI7xMeVHe9Srt2gE="
         }
       ]
     },
@@ -21606,7 +21606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21643,7 +21643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 23:33:54 GMT"
+          "Value": "Sat, 28 Dec 2024 14:15:25 GMT"
         },
         {
           "Name": "Cache-Control",
